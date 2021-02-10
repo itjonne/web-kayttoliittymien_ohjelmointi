@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head><!-- head-osan sisältöä ei saa muuttaa -->
+        <script src="http://appro.mit.jyu.fi/tiea2120/vt/vt1/2019/data.js"></script>
+        <link rel="stylesheet" type="text/css" href="tyylit.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8"/>
+        <title>Tulospalvelu</title>
+    </head>
+    <body><!-- Tämän tiedoston sisältöä saa muuttaa vapaasti tästä kommentista eteenpäin ! -->
+    <section id="tulospalvelu">
+       <h1>Tulospalvelu</h1>
+       
+       
+       <form id="joukkueen_tiedot"action="" method="get">
+        <h1>Lisää Joukkue</h1> 
+        <p id="lisatty"></p>      
+           <fieldset>
+               <legend>Joukkueen tiedot</legend>
+               <div class="container">
+                    <div class="otsikko">
+                        <label for="nimi">Nimi</label> 
+                    </div>    
+                    <div class="sisalto">
+                        <input minlength="2" type="text" id="nimi" name="nimi" placeholder="" required>  
+                    </div>                              
+                </div>
+               <div class="container">
+                   <div class="otsikko">
+                   <p>Leimaustapa</p>
+                   </div>
+                   <div class="sisalto" id="leimaustapa">
+
+                   </div>
+                      <!--
+                        <input type="checkbox" id="gps" name="leimaustapa" value="gps"><label for="gps">GPS</label>                      
+                        <input type="checkbox" id="nfc" name="leimaustapa" value="nfc"><label for="nfc">NFC</label>
+                        <input type="checkbox" id="qr" name="leimaustapa" value="qr"><label for="qr">QR</label>                        
+                        <input type="checkbox" id="lomake" name="leimaustapa" value="lomake"><label for="lomake">Lomake</label>                       
+                        -->
+                    
+                
+            </div>
+                <div class="container">
+                <div class="otsikko">    
+                <p>Sarja</p>
+                </div>
+                <div class="sisalto" id="sarja">
+
+                </div>
+                    <!--                
+                    <span><input type="radio" checked="true" id="sarja_2h" name="sarja" required value="2h"><label for="sarja_2h">2h</label></span>
+                    <span><input type="radio" id="sarja_4h" name="sarja" required value="4h"><label for="sarja_4h">4h</label></span>
+                    <span><input type="radio" id="sarja_8h" name="sarja" required value="8h"><label for="sarja_8h">8h</label></span>
+                    -->                        
+                
+            </div>                
+            </fieldset>
+            <button id="tallenna">Tallenna</button>
+       </form>
+    </section>
+    <section id="joukkueetLista">       
+    </section>   
+
+<script src="http://appro.mit.jyu.fi/tools/htmlinspector/html-inspector.js"></script>
+<script>// yksinkertaisin tapa kutsua inspectoria on: HTMLInspector.inspect()
+window.addEventListener("load",  function() { HTMLInspector.inspect( {domRoot: "html",useRules: null,excludeRules: ["script-placement"],excludeElements: "svg",excludeSubTrees: ["svg","iframe"],onComplete: function(errors) { errors.forEach(function(error) {console.warn(error.message, error.context)})}} );});</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jshint/2.11.0/jshint.js"></script>
+<script src="http://appro.mit.jyu.fi/tools/jshint/jshint.user.js"></script>
+<script src="vt3.js"></script>
+</body>
+</html>

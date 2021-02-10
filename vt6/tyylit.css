@@ -1,0 +1,98 @@
+@media all and (min-width: 600px) {
+    .osiot {
+        flex-direction: row;
+    }
+
+    #osio2 {
+        padding-left: 10%;
+        flex: 1;
+    }
+
+    html,body {
+        overflow: hidden,
+    }
+  }
+  
+  @media all and (max-width: 600px) {
+      .container {
+          display: flex;
+          flex-wrap: nowrap;
+          overflow: hidden;
+      }
+
+      .sisalto {
+        flex:1;
+        text-align: end;
+        margin-right: 0;
+  
+    }
+
+    .osiot {
+        flex-direction: column;
+
+    }
+
+    .osio2 {
+        padding-left: 0;
+    }
+  }
+  
+  form {
+      border-style: solid;
+      border-color: peru;
+  }
+
+  html, body {
+      overflow: auto;
+  }
+
+  .container {
+      margin-bottom: 1em;
+      width:100%;
+  }
+  
+  .container p {
+      margin: 0;
+  }
+  
+  
+  .otsikko {
+      flex: 1;
+  }
+  
+  .sisalto {
+      flex:1;
+      text-align: end;
+
+  }
+
+  .sisalto label {
+      flex-wrap: nowrap;
+      display: block;
+      text-align: end;
+  }
+  
+  .checkbox {
+      flex-wrap: nowrap;
+  }
+
+  .osiot {
+      display: flex;
+  }
+
+  #osio1 {
+      flex:1;
+  }
+
+  #joukkueLista {
+    border-style: solid;
+    border-color: peru;
+  }
+
+  #joukkueLista div p {
+      margin: 0;
+  }
+
+  #varoitus {
+      color:red;
+  }

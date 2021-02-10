@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>      
+        <link rel="stylesheet" href="tyylit.css" type="text/css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="utf-8"/>
+        <title>Animaatio</title>
+    </head>
+    <body>
+        <button id="lisaa">Lisää Pöllö</button>
+        <canvas id="canvas1" width="383" height="300">
+
+        </canvas>
+        <canvas id="canvas2" width="383" height="300">
+
+        </canvas>
+        <img src="owl.svg" alt="Pöllö" />
+        <svg width="100%" height="100%">
+            <defs>
+              <linearGradient id="linear" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop offset="0%"   stop-color="grey"/>
+                <stop offset="50%"   stop-color="yellow"/>
+                <stop offset="100%" stop-color="black"/>
+              </linearGradient>
+            </defs>
+            <rect x="0" y="0" width="100%" height="40" fill="url(#linear)" />
+        </svg>
+<script src="http://appro.mit.jyu.fi/tools/htmlinspector/html-inspector.js"></script>
+<script>// yksinkertaisin tapa kutsua inspectoria on: HTMLInspector.inspect()
+window.addEventListener("load",  function() { HTMLInspector.inspect( {domRoot: "html",useRules: null,excludeRules: ["script-placement"],excludeElements: "svg",excludeSubTrees: ["svg","iframe"],onComplete: function(errors) { errors.forEach(function(error) {console.warn(error.message, error.context)})}} );});</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jshint/2.11.0/jshint.js"></script>
+<script src="http://appro.mit.jyu.fi/tools/jshint/jshint.user.js"></script>
+<script src="vt4.js"></script>
+</body>
+</html>

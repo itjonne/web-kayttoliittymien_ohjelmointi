@@ -1,0 +1,108 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/*
+*, *::after, *::before {
+	-webkit-user-select: none;
+	-webkit-user-drag: none;
+	-webkit-app-region: no-drag;
+	cursor: default;
+}
+*/
+form {
+    width: 40%;
+    border-style: solid;
+}
+
+form label {
+    display: block;
+}
+
+.pelilauta {
+    display: inline-block;
+    border-style: solid;
+}
+
+.pelilauta-ruutu {
+    height: 40px;
+    width: 40px;
+
+    margin: 1px 1px 1px 1px;
+
+    background-color: lightgray;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pelilauta-ruutu-sallittu {
+    height: 40px;
+    width: 40px;
+
+    margin: 1px 1px 1px 1px;
+
+    background-color: lightgreen;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pelilauta-ruutu-siirrettava {
+    height: 40px;
+    width: 40px;
+
+    margin: 1px 1px 1px 1px;
+
+    background-color: lightgray;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pelilauta-ruutu-siirrettava-valittu {
+    height: 40px;
+    width: 40px;
+
+    margin: 1px 1px 1px 1px;
+
+    background-color: lightgreen;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.pelilauta-rivi {
+    display: flex;
+}
+
+.container {
+    display: flex;
+}
+
+#nappulat {
+    margin-left: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#nappulat p {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#nappulat div {
+   display: flex;
+}
+
+#toka div {
+    margin-right: 5px;
+ }
+
+#pisteet {
+    border-style: dashed;
+    margin-top: 10px;
+}
+
+#pisteet h2 {
+    padding-left: 10px;
+}

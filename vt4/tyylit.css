@@ -1,0 +1,160 @@
+html, body  {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    background-color: black;
+    height:100%;
+    width: 100%;
+}
+
+button {
+    position: absolute;
+    height: 40px;
+    width: 120px;
+    top: 0%;
+    right: 0%;
+    z-index:11;
+}
+
+canvas {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 9;
+}
+
+#canvas1 {
+    left: calc(50% - (383px/2));
+    top: calc(50% - 300px);
+
+    animation-duration: 6s;
+    animation-name: pupuYlos;
+    animation-iteration-count: infinite;
+}
+#canvas2 {
+    left: calc(50% - (383px/2));
+    top: 50%;
+
+    animation-duration: 6s;
+    animation-name: pupuAlas;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pupuYlos {
+    from {
+        top: calc(50% - 300px);
+    }
+
+    50% {
+        top: calc(50% - 400px);
+    }
+    to {
+        top: calc(50% - 300px);
+    }
+}
+
+@keyframes pupuAlas {
+    from {
+        top: 50%;
+    }
+
+    50% {
+        top: calc(50% + 100px);
+    }
+    to {
+        top: 50%;
+    }
+}
+
+svg {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    bottom: 0;
+    
+   
+    z-index: auto;
+    
+}
+
+svg rect {
+    animation-duration: 6s;
+    animation-name: move;
+    animation-iteration-count: infinite;
+}
+
+img {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    z-index: 10;
+
+    animation-duration: 6s;
+    /*
+    animation-name: nelio;
+    */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes nelio {
+    from {
+       left: 0;
+       top: 0;
+    }
+    25% {
+        left: calc(100% - 94.5px);
+        top: 0;
+    }
+    50% {
+        left: calc(100% - 94.5px);
+        top: calc(100% - 92.5px);
+    }
+    75% {
+        left: 0;
+        top: calc(100% - 92.5px);
+    }
+    to {
+        left: 0;
+        top: 0;
+        
+    }
+}
+
+@keyframes nelioVasen {
+    from {
+       left: 0;
+       top: 0;
+    }
+    25% {
+        left: 0;
+        top: calc(100% - 92.5px);
+    }
+    50% {
+        left: calc(100% - 94.5px);
+        top: calc(100% - 92.5px);
+    }
+    75% {
+        left: calc(100% - 94.5px);
+        top: 0;
+    }
+    to {
+        left: 0;
+        top: 0;
+        
+    }
+}
+
+@keyframes move {
+    from {
+        y: 0;
+    }
+
+    50% {
+        y: 100%;
+    }
+    to {
+        y: 0;
+    }
+}
